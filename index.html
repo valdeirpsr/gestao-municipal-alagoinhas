@@ -13,6 +13,9 @@
   <!-- Scripts -->  
   <script type="module" src="./src/components/psr-nav.ts"></script>
   <script type="module" src="./src/components/psr-kpi.ts"></script>
+  <script type="module" src="./src/components/psr-card.ts"></script>
+  <script type="module" src="./src/components/chart/bar.ts"></script>
+  <script type="module" src="./src/components/chart/pie.ts"></script>
 </head>
 
 <body class="bg-slate-50 font-sans text-slate-800 pt-0 min-h-screen">
@@ -86,6 +89,29 @@
       ></psr-kpi>
     </div>
 
+    <!-- Gráficos -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+      <!-- Gráfico de Barras -->
+      <psr-card id="barChartContractsBySecretary">
+        <span slot="title">Contratos por Secretaria (Top 5)</span>
+      </psr-card>
+
+      <!-- Gráfico de Pizza -->
+      <psr-card id="pieChartByCategory">
+        <span slot="title">Distribuição por Categoria</span>
+      </psr-card>
+
+      <!-- Gráfico de Pizza -->
+      <psr-card id="pieChartByPersonType">
+        <span slot="title">Distribuição por Tipo de Pessoa</span>
+      </psr-card>
+
+      <!-- Gráfico de Pizza -->
+      <psr-card id="pieChartCostByPersonType">
+        <span slot="title">Custo por Tipo de Pessoa</span>
+      </psr-card>
+    </div>
+
     <!-- Tabela -->
     <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden p-6">
       <h3 class="text-lg font-semibold text-slate-800 mb-4">Detalhamento dos Contratos</h3>
@@ -97,44 +123,7 @@
     </div>
   </main>
 
-  <script type="module">
-    import { createIcons, icons } from 'lucide';
-    import Swal from 'sweetalert2';
-    import { TablePresenter } from './src/presentation/presenters/contracts/table.presenter';
-    import { data as contractsData } from './public/contratos-prefeitura.json';
-    import { JsonContractRepository } from './src/domain/repositories/contract.repository.ts';
-    import { EventBus } from './src/presentation/events/event-bus.ts';
-    import { ContractModalPresenter } from './src/presentation/presenters/contracts/modal.presenter.ts'
-
-    const contractRepository = new JsonContractRepository(contractsData);
-
-    const bus = new EventBus();
-    bus.subscribe('contract:datatables:selected', async (ev) => {
-        const modalPresenter = new ContractModalPresenter();
-        const contractEvent = ev;
-        const contract = contractRepository.getById(contractEvent.contractId);
-        
-        if (contract) {
-            try {
-              Swal.showLoading();
-              contract.arquivos = await contractRepository.getContractFiles(contract.numeroControlePNCP);
-              modalPresenter.showContractDetails(contract);
-              Swal.hideLoading();
-            } catch (error) {
-              Swal.fire({
-                title: 'Ops!',
-                text: 'Ocorreu um erro ao tentar capturar as informações do contrato',
-                icon: 'error'
-              })
-            }
-        }
-    })
-
-    const tablePresenter = new TablePresenter(contractRepository, bus);
-    tablePresenter.initialize();
-    
-    createIcons({ icons })
-  </script>
+  <script type="module" src='./src/script.ts'></script>
 </body>
 
 </html>
