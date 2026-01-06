@@ -9,19 +9,9 @@ import type { ChartData, PieChartData } from '../../../components/chart/chart.in
 
 export class ChartPresenter {
     private analyticsService: IAnalyticsService;
-    private barChartAdapter: IChartAdapter;
-    private pieChartAdapters: Map<string, IPieChartAdapter> = new Map();
 
-    constructor(analyticsService: IAnalyticsService, barChartAdapter: IChartAdapter) {
+    constructor(analyticsService: IAnalyticsService) {
         this.analyticsService = analyticsService;
-        this.barChartAdapter = barChartAdapter;
-    }
-
-    /**
-     * Registra um adapter de gráfico de pizza
-     */
-    registerPieChartAdapter(key: string, adapter: IPieChartAdapter): void {
-        this.pieChartAdapters.set(key, adapter);
     }
 
     /**
@@ -93,13 +83,5 @@ export class ChartPresenter {
         this.renderCategoryChart();
         this.renderPersonTypeChart();
         this.renderPersonTypeCostChart();
-    }
-
-    /**
-     * Limpa todos os gráficos
-     */
-    disposeAll(): void {
-        this.barChartAdapter.dispose();
-        this.pieChartAdapters.forEach((adapter) => adapter.dispose());
     }
 }
