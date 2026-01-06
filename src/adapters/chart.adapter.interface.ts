@@ -19,3 +19,20 @@ export interface IChartAdapter {
      */
     dispose(): void;
 }
+
+export interface PieChartData {
+    name: string;
+    value: number;
+}
+
+export interface IPieChartAdapter {
+    /**
+     * Renderiza gráfico de pizza
+     */
+    render(data: PieChartData[], elementId: string): void;
+
+    /**
+     * Limpa e desaloca recursos
+     */
+    dispose(): void;
+}

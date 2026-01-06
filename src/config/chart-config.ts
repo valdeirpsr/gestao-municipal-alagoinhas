@@ -3,6 +3,7 @@
  */
 
 import type { ECBasicOption } from 'echarts/types/dist/shared';
+import { CHART_COLORS } from './constants';
 
 export const DEFAULT_CHART_CONFIG: Partial<ECBasicOption> = {
     title: {
@@ -21,6 +22,20 @@ export const DEFAULT_TOOLTIP_CONFIG = {
     trigger: 'axis' as const,
     axisPointer: { type: 'shadow' as const },
 };
+
+export const DEFAULT_PIE_TOOLTIP = {
+    trigger: 'item' as const,
+};
+
+export const DEFAULT_PIE_COLORS = [
+    CHART_COLORS.primary,
+    CHART_COLORS.secondary,
+    CHART_COLORS.warning,
+    CHART_COLORS.danger,
+    CHART_COLORS.info,
+    CHART_COLORS.gray,
+    CHART_COLORS.purple,
+];
 
 export const BAR_CHART_LABEL_FORMATTER = (value: number) => {
     if (value >= 1000000) return `R$ ${(value / 1000000).toFixed(0)}M`;
