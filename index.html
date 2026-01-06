@@ -99,15 +99,38 @@
 
   <script type="module">
     import { createIcons, icons } from 'lucide';
+    import Swal from 'sweetalert2';
     import { TablePresenter } from './src/presentation/presenters/contracts/table.presenter';
     import { data as contractsData } from './public/contratos-prefeitura.json';
     import { JsonContractRepository } from './src/domain/repositories/contract.repository.ts';
     import { EventBus } from './src/presentation/events/event-bus.ts';
+    import { ContractModalPresenter } from './src/presentation/presenters/contracts/modal.presenter.ts'
+
+    const contractRepository = new JsonContractRepository(contractsData);
 
     const bus = new EventBus();
-    bus.subscribe('contract:datatables:selected', (ev) => console.log(ev))
+    bus.subscribe('contract:datatables:selected', async (ev) => {
+        const modalPresenter = new ContractModalPresenter();
+        const contractEvent = ev;
+        const contract = contractRepository.getById(contractEvent.contractId);
+        
+        if (contract) {
+            try {
+              Swal.showLoading();
+              contract.arquivos = await contractRepository.getContractFiles(contract.numeroControlePNCP);
+              modalPresenter.showContractDetails(contract);
+              Swal.hideLoading();
+            } catch (error) {
+              Swal.fire({
+                title: 'Ops!',
+                text: 'Ocorreu um erro ao tentar capturar as informações do contrato',
+                icon: 'error'
+              })
+            }
+        }
+    })
 
-    const tablePresenter = new TablePresenter(new JsonContractRepository(contractsData), bus);
+    const tablePresenter = new TablePresenter(contractRepository, bus);
     tablePresenter.initialize();
     
     createIcons({ icons })
