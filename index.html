@@ -101,8 +101,13 @@
     import { createIcons, icons } from 'lucide';
     import { TablePresenter } from './src/presentation/presenters/contracts/table.presenter';
     import { data as contractsData } from './public/contratos-prefeitura.json';
-    
-    const tablePresenter = new TablePresenter(contractsData);
+    import { JsonContractRepository } from './src/domain/repositories/contract.repository.ts';
+    import { EventBus } from './src/presentation/events/event-bus.ts';
+
+    const bus = new EventBus();
+    bus.subscribe('contract:datatables:selected', (ev) => console.log(ev))
+
+    const tablePresenter = new TablePresenter(new JsonContractRepository(contractsData), bus);
     tablePresenter.initialize();
     
     createIcons({ icons })

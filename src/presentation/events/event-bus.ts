@@ -8,8 +8,8 @@ export interface DomainEvent {
     timestamp: Date;
 }
 
-export interface ContractSelectedEvent extends DomainEvent {
-    type: 'contract:selected';
+export interface ContractDatatablesSelectedEvent extends DomainEvent {
+    type: 'contract:datatables:selected';
     contractId: string;
 }
 

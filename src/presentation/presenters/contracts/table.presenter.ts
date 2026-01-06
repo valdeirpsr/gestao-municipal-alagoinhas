@@ -4,22 +4,27 @@
  */
 
 import DataTable from 'datatables.net-dt';
+import type { IContractRepository } from '../../../domain/repositories/contract.repository.interface';
+import type { Contract } from '../../../domain/models/contract';
 import { Formatter } from '../../../utils/formatters';
 import { BADGE_TYPES, DOM_ELEMENTS } from '../../../config/constants';
-import type { Contract } from '../../../types/contract';
+import type { EventBus, ContractDatatablesSelectedEvent } from '../../events/event-bus';
 
 export class TablePresenter {
-    private contracts: Contract[];
+    private contractRepository: IContractRepository;
+    private eventBus: EventBus;
 
-    constructor(contracts: Contract[]) {
-        this.contracts = contracts;
+    constructor(contractRepository: IContractRepository, eventBus: EventBus) {
+        this.contractRepository = contractRepository;
+        this.eventBus = eventBus;
     }
 
     /**
      * Inicializa e renderiza tabela de contratos
      */
     initialize(): void {
-        const tableData = this.mapContractsToTableData(this.contracts);
+        const contracts = this.contractRepository.getAll();
+        const tableData = this.mapContractsToTableData(contracts);
 
         new DataTable(DOM_ELEMENTS.contractsTable, {
             columns: [
@@ -49,6 +54,9 @@ export class TablePresenter {
                 thousands: '.',
             },
             data: tableData,
+            on: {
+                click: (e: Event) => this.handleRowClick(e),
+            },
         });
     }
 
@@ -101,5 +109,24 @@ export class TablePresenter {
         };
 
         return `<span class="${colors[type] || ''} text-xs font-medium px-1.5 py-0.5 rounded inset-ring">${text}</span>`;
+    }
+
+    /**
+     * Trata clique em botão de info
+     */
+    private handleRowClick(e: Event): void {
+        const target = e.target instanceof Element ? e.target.closest('button') : null;
+        if (!(target instanceof HTMLButtonElement)) return;
+
+        const contractId = target.dataset.doc as string;
+        const contract = this.contractRepository.getById(contractId);
+
+        if (contract) {
+            this.eventBus.publish({
+                type: 'contract:datatables:selected',
+                contractId,
+                timestamp: new Date(),
+            } as ContractDatatablesSelectedEvent);
+        }
     }
 }
