@@ -3,6 +3,7 @@
  * Define o contrato que qualquer implementação deve seguir (Dependency Inversion)
  */
 
+import type { AgencyFiles } from '../../types/agencyFiles';
 import type { Contract } from '../models/contract';
 
 export interface IContractRepository {
@@ -25,4 +26,9 @@ export interface IContractRepository {
      * Retorna a quantidade total de contratos
      */
     getTotal(): number;
+
+    /**
+     * Retorna os arquivos de contratos
+     */
+    getContractFiles(pncp: string): Promise<AgencyFiles[]>;
 }
