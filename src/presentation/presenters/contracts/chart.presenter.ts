@@ -4,9 +4,8 @@
  */
 
 import type { IAnalyticsService } from '../../../domain/services/analytics.service.interface';
-import type { IChartAdapter, ChartData } from '../../../adapters/chart.adapter.interface';
-import type { IPieChartAdapter, PieChartData } from '../../../adapters/chart.adapter.interface';
 import { DOM_ELEMENTS, ANALYTICS } from '../../../config/constants';
+import type { ChartData, PieChartData } from '../../../components/chart/chart.interface';
 
 export class ChartPresenter {
     private analyticsService: IAnalyticsService;

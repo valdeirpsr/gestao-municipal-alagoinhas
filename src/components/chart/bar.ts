@@ -3,11 +3,11 @@
 import { html, LitElement, unsafeCSS } from "lit";
 import * as echarts from "echarts";
 import { customElement, property, query } from "lit/decorators.js";
-import type { ChartData, IChartAdapter } from "../../adapters/chart.adapter.interface";
 import type { ECBasicOption } from "echarts/types/dist/shared";
 import { BAR_CHART_LABEL_FORMATTER, DEFAULT_CHART_CONFIG, DEFAULT_TOOLTIP_CONFIG, Y_AXIS_LABEL_CONFIG } from "../../config/chart-config";
 import { Formatter } from "../../utils/formatters";
 import tailwindStyles from '../../index.css?inline'
+import type { ChartData, IChartAdapter } from "./chart.interface";
 
 @customElement('chart-bar')
 export class ChartBar extends LitElement implements IChartAdapter {
