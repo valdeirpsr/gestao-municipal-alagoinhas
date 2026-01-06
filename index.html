@@ -7,6 +7,7 @@
   <title>Painel de Contratos - Alagoinhas</title>
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.6/css/dataTables.dataTables.min.css">
   <link rel="stylesheet" href="./src/index.css">
 
   <!-- Scripts -->  
@@ -84,10 +85,26 @@
         description="Número de contratados."
       ></psr-kpi>
     </div>
+
+    <!-- Tabela -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden p-6">
+      <h3 class="text-lg font-semibold text-slate-800 mb-4">Detalhamento dos Contratos</h3>
+      <table id="contractsTable" class="w-full text-left text-sm text-slate-600 display responsive nowrap">
+      </table>
+      <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4">
+        Dados oficiais do Município de Alagoinhas.
+      </div>
+    </div>
   </main>
 
   <script type="module">
     import { createIcons, icons } from 'lucide';
+    import { TablePresenter } from './src/presentation/presenters/contracts/table.presenter';
+    import { data as contractsData } from './public/contratos-prefeitura.json';
+    
+    const tablePresenter = new TablePresenter(contractsData);
+    tablePresenter.initialize();
+    
     createIcons({ icons })
   </script>
 </body>
