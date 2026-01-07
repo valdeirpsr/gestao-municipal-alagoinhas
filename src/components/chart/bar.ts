@@ -59,7 +59,7 @@ export class ChartBar extends LitElement implements IChartAdapter {
             ...DEFAULT_CHART_CONFIG,
             tooltip: {
                 ...DEFAULT_TOOLTIP_CONFIG,
-                formatter: (params: any) => {
+                formatter: (params: { name: string, value: number }[]) => {
                     return `${params[0].name}: ${Formatter.currency(params[0].value)}`;
                 },
             },

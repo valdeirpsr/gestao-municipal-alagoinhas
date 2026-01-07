@@ -104,7 +104,7 @@ export class ChartPie extends LitElement implements IPieChartAdapter {
      * Configura Label e o Tooltip para o tipo "category" (categorias)
      */
     private buildOptionForCategory(option: ECBasicOption): ECBasicOption {
-        (option.series as []).map((serie: {}) => ({
+        (option.series as []).map((serie: any) => ({
             ...serie,
             label: {
                 show: false,
@@ -136,9 +136,9 @@ export class ChartPie extends LitElement implements IPieChartAdapter {
      * Configura Label para o tipo "currency" (dinheiro)
      */
     private buildOptionForCurrency(option: ECBasicOption): ECBasicOption {
-        const fnFormatter = (context: any) => `${context.data.name}:\n${Formatter.currency(context.data.value)} (${context.percent}%)`;
+        const fnFormatter = (context: { data: PieChartData, percent: string }) => `${context.data.name}:\n${Formatter.currency(context.data.value)} (${context.percent}%)`;
 
-        option.series = (option.series as []).map((serie: {}) => Object.assign({}, {
+        option.series = (option.series as []).map((serie: any) => Object.assign({}, {
             ...serie,
             label: {
                 show: true,
