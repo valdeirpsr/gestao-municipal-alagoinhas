@@ -1,7 +1,7 @@
 import { LitElement, html, unsafeCSS } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { classMap } from 'lit/directives/class-map.js';
-import tailwindStyles from '../index.css?inline'; 
+import tailwindStyles from '../index.css?inline';
 
 /**
  * Psr Nav
@@ -13,7 +13,7 @@ export class PsrNav extends LitElement {
    * Current active tab
    */
   @property()
-  tab: string = 'dashboard'
+  tab: string = 'contratos'
 
   private readonly classMenuActive = {
     'border-blue-500': true,
@@ -28,8 +28,8 @@ export class PsrNav extends LitElement {
   }
 
   private readonly tabs = [
-    { id: 'dashboard', label: 'Dashboard Layout' },
-    { id: 'contratos', label: 'Contratos' },
+    { id: 'contratos', label: 'Contratos', href: '/' },
+    { id: 'emendas', label: 'Emendas', href: '/emendas.html' },
   ]
 
   render() {
@@ -42,7 +42,7 @@ export class PsrNav extends LitElement {
                 <span class="font-bold text-xl text-slate-700">Gestão de Municipal</span>
               </div>
               <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                ${this.tabs.map(({ id, label }) => this._renderTabButton(id, label))}
+                ${this.tabs.map((link) => this._renderTabButton(link.href, link.label))}
               </div>
             </div>
             <div class="flex items-center">
@@ -57,31 +57,21 @@ export class PsrNav extends LitElement {
     `
   }
 
-  private _renderTabButton(tabId: string, label: string) {
-    const isActive = this.tab === tabId
+  private _renderTabButton(href: string, label: string) {
+    const isActive = window.location.pathname === href;
     const buttonClass = isActive ? this.classMenuActive : this.classMenuDisable
     return html`
-      <button 
-        @click="${() => this._switchTab(tabId)}"
+      <a
+        href="${href}"
         class="${classMap(buttonClass)} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200 cursor-pointer">
         ${label}
-      </button>
+      </a>
     `
   }
 
   static styles = [
     unsafeCSS(tailwindStyles),
   ]
-
-  private _switchTab(tabId: string): void {
-    this.tab = tabId
-    const event = new CustomEvent('tab-switched', {
-      detail: { tab: this.tab },
-      bubbles: true,
-      composed: true,
-    })
-    this.dispatchEvent(event)
-  }
 }
 
 declare global {
