@@ -14,15 +14,13 @@ export class ChartPie extends LitElement implements IPieChartAdapter {
     private chart?: echarts.ECharts;
 
     @property()
-    /* @ts-ignore */
-    data: PieChartData[];
+    data: PieChartData[] = [];
 
     @property()
     type: 'default' | 'category' | 'currency' = 'default';
 
     @query('#chart')
-    /* @ts-ignore */
-    _chart: HTMLDivElement;
+    _chart: HTMLDivElement|undefined;
 
     static styles = [
         unsafeCSS(tailwindStyles),
@@ -34,6 +32,12 @@ export class ChartPie extends LitElement implements IPieChartAdapter {
 
     firstUpdated() {
         if (!this.data) return;
+
+        if (!this._chart) {
+          console.warn(`Element #chart not found`);
+          return;
+        }
+
         this.chart = echarts.init(this._chart);
         this.chart.setOption(this.buildOption(this.data));
     }

@@ -14,12 +14,13 @@ export class ChartBar extends LitElement implements IChartAdapter {
     private chart?: echarts.ECharts;
 
     @property()
-    /* @ts-ignore */
-    data: ChartData;
+    data: ChartData = {
+      labels: [],
+      values: []
+    };
 
     @query('#chart')
-    /* @ts-ignore */
-    _chart: HTMLDivElement;
+    _chart: HTMLDivElement|undefined;
 
     static styles = [
         unsafeCSS(tailwindStyles),
@@ -31,6 +32,12 @@ export class ChartBar extends LitElement implements IChartAdapter {
 
     firstUpdated() {
         if (!this.data) return;
+
+        if (!this._chart) {
+          console.warn(`Element #chart not found`);
+          return;
+        }
+
         this.chart = echarts.init(this._chart);
         this.chart.setOption(this.buildOption(this.data));
     }
