@@ -1,0 +1,5 @@
+package.json
+pnpm-lock.yaml
+tailwind.config.js
+tsconfig.json
+vite.config.js
