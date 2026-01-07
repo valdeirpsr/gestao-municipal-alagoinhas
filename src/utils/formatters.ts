@@ -60,12 +60,28 @@ export class Formatter {
      * Normaliza nome de agência/órgão
      */
     static normalizeAgencyName(name: string): string {
-        return name
+        return Formatter.ucWords(name
             .toLowerCase()
             .replace(/\s{2,}/, ' ')
             .replace(/(secretaria (municipal)? d[ea] )/, '')
-            .trim()
-            .replace(/^[a-z]/, (x) => x.toLocaleUpperCase());
+            .trim());
+    }
+
+    /**
+     * Transforma a primeira letra em maiúscula
+     */
+    static ucFirst(value: string): string {
+        return value.toLocaleLowerCase().replace(/^[a-z]/, (x) => x.toLocaleUpperCase());
+    }
+
+    /**
+     * Transforma a primeira letra em maiúscula de todas as palavras
+     */
+    static ucWords(value: string, separator: string = ' '): string {
+        return value.toLocaleLowerCase()
+          .split(separator)
+          .map((x) => x.length > 2 ? Formatter.ucFirst(x) : x)
+          .join(separator);
     }
 
     /**
