@@ -5,7 +5,7 @@
 
 import DataTable from 'datatables.net-dt';
 import type { IContractRepository } from '../../../domain/repositories/contract.repository.interface';
-import type { Contract } from '../../../domain/models/contract';
+import type { Contract } from '../../../types/contract';
 import { Formatter } from '../../../utils/formatters';
 import { BADGE_TYPES, DOM_ELEMENTS } from '../../../config/constants';
 import type { EventBus, ContractDatatablesSelectedEvent } from '../../events/event-bus';
