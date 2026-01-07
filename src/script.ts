@@ -20,7 +20,7 @@ import { ContractModalPresenter } from './presentation/presenters/contracts/moda
 
 // Events
 import { EventBus } from './presentation/events/event-bus';
-import type { ContractDatatablesSelectedEvent } from './presentation/events/event-bus';
+import type { ContractDatatablesSelectedEvent, DomainEvent } from './presentation/events/event-bus';
 
 // Inicialização
 async function initializeDashboard(): Promise<void> {

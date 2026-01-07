@@ -66,6 +66,7 @@ export class TablePresenter {
           const total = rows.data().toArray().reduce((acc: number, curr: any) => acc + curr.total, 0);
           const totalFormatted = DataTable.render.number('.', ',', 2, 'R$ ');
 
+          /* eslint-disable-next-line */
           /* @ts-ignore */
           return `Total: ${totalFormatted.display(total)}`;
         }
