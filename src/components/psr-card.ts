@@ -11,9 +11,14 @@ export class PsrCard extends LitElement {
     render() {
         return html`
             <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <h3 class="text-lg font-semibold mb-4 text-slate-800"><slot name="title" /></h3>
-                <div class="w-full h-80">
+                <h3 class="text-lg font-semibold mb-4 text-slate-800">
+                  <slot name="title" />
+                </h3>
+                <div class="w-full min-h-80">
                     <slot />
+                </div>
+                <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4">
+                  <slot name="footer" />
                 </div>
             </div>
         `;
