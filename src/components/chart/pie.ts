@@ -3,11 +3,11 @@
 import { html, LitElement, unsafeCSS } from "lit";
 import * as echarts from "echarts";
 import { customElement, property, query } from "lit/decorators.js";
-import type { IPieChartAdapter, PieChartData } from "../../adapters/chart.adapter.interface";
 import type { ECBasicOption } from "echarts/types/dist/shared";
 import { DEFAULT_CHART_CONFIG, DEFAULT_PIE_COLORS, DEFAULT_PIE_TOOLTIP } from "../../config/chart-config";
 import tailwindStyles from '../../index.css?inline'
 import { Formatter } from "../../utils/formatters";
+import type { IPieChartAdapter, PieChartData } from "./chart.interface";
 
 @customElement('chart-pie')
 export class ChartPie extends LitElement implements IPieChartAdapter {
