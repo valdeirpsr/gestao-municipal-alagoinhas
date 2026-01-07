@@ -15,6 +15,7 @@
   <script type="module" src="./src/components/psr-nav.ts"></script>
   <script type="module" src="./src/components/psr-kpi.ts"></script>
   <script type="module" src="./src/components/psr-card.ts"></script>
+  <script type="module" src="./src/components/psr-heading.ts"></script>
   <script type="module" src="./src/components/chart/bar.ts"></script>
   <script type="module" src="./src/components/chart/pie.ts"></script>
 </head>
@@ -26,102 +27,114 @@
     <psr-nav></psr-nav>
   </header>
 
-  <main class="p-6 container mx-auto lg:max-w-7xl">
-    <!-- Cards de Estatísticas -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      <!-- Card 1 -->
-      <psr-kpi
-        id="totalContracts"
-        title="Contratos Analisados"
-        icon="file-text"
-        icon-color="bg-blue-100 text-blue-600"
-        value="1"
-        description="Amostra dos maiores contratos"
-      ></psr-kpi>
+  <main class="container">
+      <!-- Cards de Estatísticas -->
+    <section>
+        <psr-heading>Visão Geral</psr-heading>
 
-      <!-- Card 2 -->
-      <psr-kpi
-        id="totalValue"
-        title="Valor Total"
-        icon="dollar-sign"
-        icon-color="bg-gray-100 text-gray-600"
-        value="R$ 0,00"
-        description="Soma dos contratos listados"
-      ></psr-kpi>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Card 1 -->
+            <psr-kpi
+                id="totalContracts"
+                title="Contratos Analisados"
+                icon="file-text"
+                icon-color="bg-blue-100 text-blue-600"
+                value="1"
+                description="Amostra dos maiores contratos"
+            ></psr-kpi>
 
-      <!-- Card 3 -->
-      <psr-kpi
-        id="topInvestment"
-        title="Maior Investimento"
-        icon="building"
-        icon-color="bg-purple-100 text-purple-600"
-        value="-"
-        description="Secretaria com maior volume"
-      ></psr-kpi>
+            <!-- Card 2 -->
+            <psr-kpi
+                id="totalValue"
+                title="Valor Total"
+                icon="dollar-sign"
+                icon-color="bg-gray-100 text-gray-600"
+                value="R$ 0,00"
+                description="Soma dos contratos listados"
+            ></psr-kpi>
 
-      <!-- Card 4 -->
-      <psr-kpi
-        id="TopExpenses"
-        title="Total de Despesas"
-        icon="dollar-sign"
-        icon-color="bg-red-100 text-red-600"
-        value="0"
-        description="Gastos/Investimento em contratações"
-      ></psr-kpi>
+            <!-- Card 3 -->
+            <psr-kpi
+                id="topInvestment"
+                title="Maior Investimento"
+                icon="building"
+                icon-color="bg-purple-100 text-purple-600"
+                value="-"
+                description="Secretaria com maior volume"
+            ></psr-kpi>
 
-      <!-- Card 5 -->
-      <psr-kpi
-        id="TopRevenues"
-        title="Total de Receitas"
-        icon="dollar-sign"
-        icon-color="bg-green-100 text-green-600"
-        value="0"
-        description="Dinheiro ou patrocínio recebido"
-      ></psr-kpi>
+            <!-- Card 4 -->
+            <psr-kpi
+                id="TopExpenses"
+                title="Total de Despesas"
+                icon="dollar-sign"
+                icon-color="bg-red-100 text-red-600"
+                value="0"
+                description="Gastos/Investimento em contratações"
+            ></psr-kpi>
 
-      <!-- Card 7 -->
-      <psr-kpi
-        id="totalContracted"
-        title="Total de Contratados"
-        icon="dollar-sign"
-        icon-color="bg-lime-100 text-lime-600"
-        value="0"
-        description="Número de contratados."
-      ></psr-kpi>
-    </div>
+            <!-- Card 5 -->
+            <psr-kpi
+                id="TopRevenues"
+                title="Total de Receitas"
+                icon="dollar-sign"
+                icon-color="bg-green-100 text-green-600"
+                value="0"
+                description="Dinheiro ou patrocínio recebido"
+            ></psr-kpi>
+
+            <!-- Card 7 -->
+            <psr-kpi
+                id="totalContracted"
+                title="Total de Contratados"
+                icon="dollar-sign"
+                icon-color="bg-lime-100 text-lime-600"
+                value="0"
+                description="Número de contratados."
+            ></psr-kpi>
+        </div>
+    </section>
 
     <!-- Gráficos -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-      <!-- Gráfico de Barras -->
-      <psr-card id="barChartContractsBySecretary">
-        <span slot="title">Contratos por Secretaria (Top 5)</span>
-      </psr-card>
+    <section>
+        <psr-heading>Gráficos</psr-heading>
 
-      <!-- Gráfico de Pizza -->
-      <psr-card id="pieChartByCategory">
-        <span slot="title">Distribuição por Categoria</span>
-      </psr-card>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <!-- Gráfico de Barras -->
+        <psr-card id="barChartContractsBySecretary">
+            <span slot="title">Contratos por Secretaria (Top 5)</span>
+        </psr-card>
 
-      <!-- Gráfico de Pizza -->
-      <psr-card id="pieChartByPersonType">
-        <span slot="title">Distribuição por Tipo de Pessoa</span>
-      </psr-card>
+        <!-- Gráfico de Pizza -->
+        <psr-card id="pieChartByCategory">
+            <span slot="title">Distribuição por Categoria</span>
+        </psr-card>
 
-      <!-- Gráfico de Pizza -->
-      <psr-card id="pieChartCostByPersonType">
-        <span slot="title">Custo por Tipo de Pessoa</span>
-      </psr-card>
-    </div>
+        <!-- Gráfico de Pizza -->
+        <psr-card id="pieChartByPersonType">
+            <span slot="title">Distribuição por Tipo de Pessoa</span>
+        </psr-card>
+
+        <!-- Gráfico de Pizza -->
+        <psr-card id="pieChartCostByPersonType">
+            <span slot="title">Custo por Tipo de Pessoa</span>
+        </psr-card>
+        </div>
+    </section>
 
     <!-- Tabela -->
-    <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden p-6">
-      <h3 class="text-lg font-semibold text-slate-800 mb-4">Detalhamento dos Contratos</h3>
-      <table id="contractsTable" class="w-full text-left text-sm text-slate-600 display responsive nowrap">
-      </table>
-      <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4">
-        Dados oficiais do Município de Alagoinhas.
-      </div>
-    </div>
+    <section>
+        <psr-heading>Detalhes</psr-heading>
+
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden p-6">
+            <h3 class="text-lg font-semibold text-slate-800 mb-4">Detalhamento dos Contratos</h3>
+            <table id="contractsTable" class="w-full text-left text-sm text-slate-600 display responsive nowrap">
+            </table>
+            <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4">
+                Dados oficiais do Município de Alagoinhas.
+            </div>
+        </div>
+    </section>
   </main>
 
   <script type="module" src='./src/script.ts'></script>

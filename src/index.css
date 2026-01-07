@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+main.container {
+    @apply flex flex-col p-6 mx-auto lg:max-w-7xl;
+}
+
+main.container:has(> section) {
+    @apply space-y-8;
+}
+
 .dt-layout-cell.dt-layout-full {
     overflow-y: auto;
 }
