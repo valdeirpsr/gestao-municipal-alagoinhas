@@ -14,13 +14,13 @@ export class ParliamentaryAmendmentsService implements IParliamentaryAmendmentsS
   }
 
   public getAgencyCount(): number {
-    return _.uniqBy(this.repository.getAll(), 'orgao').length;
+    return _.uniqBy(this.repository.getAll(), "orgao").length;
   }
 
   public getTotalBudgetByParlamentary(): number {
     const data = this.repository.getAll();
-    const countParliamentaries = Object.keys(_.countBy(data, 'vereador')).length;
+    const countParliamentaries = Object.keys(_.countBy(data, "vereador")).length;
 
-    return (_.sumBy(data, 'valor') / countParliamentaries);
+    return _.sumBy(data, "valor") / countParliamentaries;
   }
 }

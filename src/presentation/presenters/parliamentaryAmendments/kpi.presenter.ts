@@ -44,11 +44,11 @@ export class KpiPresenter {
    * Atualiza elemento DOM com segurança
    */
   private updateElement(selector: string, content: string): void {
-      const element = document.querySelector(selector);
-      if (element) {
-          (element as PsrKpi).value = content;
-      } else {
-          console.warn(`Element ${selector} not found`);
-      }
+    const element = document.querySelector(selector);
+    if (element) {
+      (element as PsrKpi).value = content;
+    } else {
+      console.warn(`Element ${selector} not found`);
+    }
   }
 }

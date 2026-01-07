@@ -4,35 +4,35 @@
  */
 
 export interface ChartData {
-    labels: string[];
-    values: number[];
+  labels: string[];
+  values: number[];
 }
 
 export interface IChartAdapter {
-    /**
-     * Renderiza gráfico
-     */
-    render(data: ChartData, elementId: string): void;
+  /**
+   * Renderiza gráfico
+   */
+  render(data: ChartData, elementId: string): void;
 
-    /**
-     * Limpa e desaloca recursos
-     */
-    dispose(): void;
+  /**
+   * Limpa e desaloca recursos
+   */
+  dispose(): void;
 }
 
 export interface PieChartData {
-    name: string;
-    value: number;
+  name: string;
+  value: number;
 }
 
 export interface IPieChartAdapter {
-    /**
-     * Renderiza gráfico de pizza
-     */
-    render(data: PieChartData[], elementId: string): void;
+  /**
+   * Renderiza gráfico de pizza
+   */
+  render(data: PieChartData[], elementId: string): void;
 
-    /**
-     * Limpa e desaloca recursos
-     */
-    dispose(): void;
+  /**
+   * Limpa e desaloca recursos
+   */
+  dispose(): void;
 }

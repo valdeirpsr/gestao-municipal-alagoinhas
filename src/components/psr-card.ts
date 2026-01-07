@@ -1,32 +1,30 @@
-import { LitElement, html, unsafeCSS } from 'lit';
-import { customElement } from 'lit/decorators.js';
-import tailwindStyles from '../index.css?inline';
+import { LitElement, html, unsafeCSS } from "lit";
+import { customElement } from "lit/decorators.js";
+import tailwindStyles from "../index.css?inline";
 
-@customElement('psr-card')
+@customElement("psr-card")
 export class PsrCard extends LitElement {
-    static styles = [
-        unsafeCSS(tailwindStyles)
-    ];
+  static styles = [unsafeCSS(tailwindStyles)];
 
-    render() {
-        return html`
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <h3 class="text-lg font-semibold mb-4 text-slate-800">
-                  <slot name="title" />
-                </h3>
-                <div class="w-full min-h-80">
-                    <slot />
-                </div>
-                <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4">
-                  <slot name="footer" />
-                </div>
-            </div>
-        `;
-    }
+  render() {
+    return html`
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <h3 class="text-lg font-semibold mb-4 text-slate-800">
+          <slot name="title" />
+        </h3>
+        <div class="w-full min-h-80">
+          <slot />
+        </div>
+        <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4">
+          <slot name="footer" />
+        </div>
+      </div>
+    `;
+  }
 }
 
 declare global {
-    interface HTMLElementTagNameMap {
-        'psr-card': PsrCard;
-    }
+  interface HTMLElementTagNameMap {
+    "psr-card": PsrCard;
+  }
 }
