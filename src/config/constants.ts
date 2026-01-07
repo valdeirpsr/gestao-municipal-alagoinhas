@@ -3,13 +3,18 @@
  */
 
 export const DOM_ELEMENTS = {
-    // KPI Cards
+    // KPI Cards (Contracts)
     totalContracts: '#totalContracts',
     totalValue: '#totalValue',
     topInvestment: '#topInvestment',
     topExpenses: '#TopExpenses',
     topRevenues: '#TopRevenues',
     totalContracted: '#totalContracted',
+
+    // KPI Cards (Amendments)
+    totalAmendmentsAmount: '#totalAmendmentsAmount',
+    totalAgency: '#totalAgency',
+    totalBudgetByCityCouncilMembers: '#totalBudgetByCityCouncilMembers',
 
     // Charts
     barChartContractsBySecretary: 'barChartContractsBySecretary',
@@ -19,6 +24,7 @@ export const DOM_ELEMENTS = {
 
     // Tables
     contractsTable: '#contractsTable',
+    parliamentaryAmendments: '#parliamentaryAmendmentsTable',
 } as const;
 
 export const ANALYTICS = {
