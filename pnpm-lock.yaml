@@ -17,9 +17,15 @@ importers:
       alpinejs:
         specifier: ^3.15.3
         version: 3.15.3
+      datatables.net-buttons-dt:
+        specifier: ^3.2.6
+        version: 3.2.6
       datatables.net-dt:
         specifier: ^2.3.6
         version: 2.3.6
+      datatables.net-rowgroup-dt:
+        specifier: ^1.6.0
+        version: 1.6.0
       echarts:
         specifier: ^6.0.0
         version: 6.0.0
@@ -332,8 +338,20 @@ packages:
   alpinejs@3.15.3:
     resolution: {integrity: sha512-fSI6F5213FdpMC4IWaup92KhuH3jBX0VVqajRJ6cOTCy1cL6888KyXdGO+seAAkn+g6fnrxBqQEx6gRpQ5EZoQ==}
 
+  datatables.net-buttons-dt@3.2.6:
+    resolution: {integrity: sha512-hYsnMOXz+dcUlQnjj19gOUyEq64VzbhWouQfjZ2rhGf3YPdohQus9nSSDBgmmS6/lt4bhDaRZ3YKYPeIbKunOQ==}
+
+  datatables.net-buttons@3.2.6:
+    resolution: {integrity: sha512-rLqkB3xLIAYwVLt+lUSxybo/1WqveTAxhQm6wj6yvXlJiWq+oJ8MKW6H1q90QrXbNp0fGngnfD0cmpMZnNnnNw==}
+
   datatables.net-dt@2.3.6:
     resolution: {integrity: sha512-8OEUNCEfkeW+TuVUDlT1q6/XXOitgVzCdNqBivw8bK9DnaNk5F6JjT8lE2pQ4uAfoL/dTy2J+HKxTHeTh8HJlg==}
+
+  datatables.net-rowgroup-dt@1.6.0:
+    resolution: {integrity: sha512-35imTRp69cL0CGByCgiCKo+diDkVmATavg2jjjUJkQERJjayVbQzou4TRzHEIwN27ivS3/PWLBxaqscB3n5YVA==}
+
+  datatables.net-rowgroup@1.6.0:
+    resolution: {integrity: sha512-3G6zDo39kh1JWSVVu9pUd0ukyNfxWAOuciV+NbOnhI+CbUxBuRCkMFn8p2nUgODdVuFGyK+2ClY6QByiCalwiQ==}
 
   datatables.net@2.3.6:
     resolution: {integrity: sha512-xQ/dCxrjfxM0XY70wSIzakkTZ6ghERwlLmAPyCnu8Sk5cyt9YvOVyOsFNOa/BZ/lM63Q3i2YSSvp/o7GXZGsbg==}
@@ -840,7 +858,29 @@ snapshots:
     dependencies:
       '@vue/reactivity': 3.1.5
 
+  datatables.net-buttons-dt@3.2.6:
+    dependencies:
+      datatables.net-buttons: 3.2.6
+      datatables.net-dt: 2.3.6
+      jquery: 3.7.1
+
+  datatables.net-buttons@3.2.6:
+    dependencies:
+      datatables.net: 2.3.6
+      jquery: 3.7.1
+
   datatables.net-dt@2.3.6:
+    dependencies:
+      datatables.net: 2.3.6
+      jquery: 3.7.1
+
+  datatables.net-rowgroup-dt@1.6.0:
+    dependencies:
+      datatables.net-dt: 2.3.6
+      datatables.net-rowgroup: 1.6.0
+      jquery: 3.7.1
+
+  datatables.net-rowgroup@1.6.0:
     dependencies:
       datatables.net: 2.3.6
       jquery: 3.7.1
