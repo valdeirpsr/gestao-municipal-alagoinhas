@@ -4,7 +4,7 @@
  */
 
 import type { AgencyFiles } from '../../types/agencyFiles';
-import type { Contract } from '../models/contract';
+import type { Contract } from "../../types/contract";
 
 export interface IContractRepository {
     /**

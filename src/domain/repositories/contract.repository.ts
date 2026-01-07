@@ -5,9 +5,9 @@
 
 import { AGENCY_FILES_TYPES } from '../../config/constants';
 import type { AgencyFiles } from '../../types/agencyFiles';
-import type { Contract } from '../models/contract';
 import { AgencyFilesService } from '../services/agency-files.service';
 import type { IContractRepository } from './contract.repository.interface';
+import type { Contract } from "../../types/contract";
 
 export class JsonContractRepository implements IContractRepository {
     private data: Contract[];
