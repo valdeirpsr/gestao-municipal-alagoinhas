@@ -43,17 +43,17 @@ async function initializeDashboard(): Promise<void> {
     const modalPresenter = new ContractModalPresenter();
 
     // Inscrever no evento de seleção de contrato
-    eventBus.subscribe('contract:datatables:selected', async (event: any) => {
+    eventBus.subscribe('contract:datatables:selected', async (event: DomainEvent) => {
         const contractEvent = event as ContractDatatablesSelectedEvent
         const contract = contractRepository.getById(contractEvent.contractId) as Contract;
-        
+
         if (contract) {
             try {
               Swal.showLoading();
               contract.arquivos = await contractRepository.getContractFiles(contract.numeroControlePNCP);
               modalPresenter.showContractDetails(contract);
               Swal.hideLoading();
-            } catch (error) {
+            } catch {
               Swal.fire({
                 title: 'Ops!',
                 text: 'Ocorreu um erro ao tentar capturar as informações do contrato',
