@@ -1,6 +1,7 @@
 import { LitElement, html, unsafeCSS } from "lit";
 import { customElement, queryAssignedNodes, state } from "lit/decorators.js";
 import tailwindStyles from "../index.css?inline";
+import { classMap } from "lit/directives/class-map.js";
 
 @customElement("psr-card")
 export class PsrCard extends LitElement {
@@ -22,8 +23,8 @@ export class PsrCard extends LitElement {
     return html`
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
         <div class="w-full">
-          <div class="flex items-start space-x-4">
-              <div class="h-12 w-12 rounded-lg flex items-center justify-center shrink-0 ${!this._hasSlotIcon ? 'hidden' : this._getClassesNameSlot('_iconNodes')}">
+          <div class="items-start space-x-4 ${classMap({ 'flex': this._hasSlotIcon })}">
+              <div class="h-12 w-12 rounded-lg flex items-center justify-center shrink-0" .hidden=${!this._hasSlotIcon}>
                 <slot name="icon" @slotchange=${this._onHeadingSlotChange} />
               </div>
               <div>
@@ -34,7 +35,7 @@ export class PsrCard extends LitElement {
               </div>
           </div>
         </div>
-        <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4 ${!this._hasSlotFooter ? 'hidden' : this._getClassesNameSlot('_footerNodes')}">
+        <div class="mt-4 text-center text-xs text-slate-500 border-t border-slate-100 pt-4 ${classMap({ 'hidden': !this._hasSlotFooter })}">
           <slot name="footer" @slotchange=${this._onFooterSlotChange} />
         </div>
       </div>
@@ -47,12 +48,6 @@ export class PsrCard extends LitElement {
 
   private _onFooterSlotChange() {
     this._hasSlotFooter = this._footerNodes.length > 0;
-  }
-
-  private _getClassesNameSlot(value: '_iconNodes' | '_footerNodes'): string {
-    const classes: string[] = [];
-    this[value].forEach((v) => classes.push(v.className))
-    return classes.join(' ')
   }
 }
 
