@@ -4,6 +4,7 @@
  */
 
 import DataTable from "datatables.net-dt";
+import { createIcons, icons } from "lucide";
 import type { IContractRepository } from "../../../domain/repositories/contract.repository.interface";
 import type { Contract } from "../../../types/contract";
 import { Formatter } from "../../../utils/formatters";
@@ -39,6 +40,7 @@ export class TablePresenter {
           title: "Ação",
         },
       ],
+      order: [1, 'desc'],
       columnDefs: [
         {
           targets: 4,
@@ -56,6 +58,7 @@ export class TablePresenter {
       data: tableData,
       on: {
         click: (e: Event) => this.handleRowClick(e),
+        draw: () => createIcons({ icons })
       },
     });
   }
@@ -65,7 +68,7 @@ export class TablePresenter {
    */
   private mapContractsToTableData(contracts: Contract[]): Array<Record<string, any>> {
     return contracts.map((contract) => ({
-      supplier: Formatter.truncate(contract.nomeRazaoSocialFornecedor, 40),
+      supplier: Formatter.truncate(contract.nomeRazaoSocialFornecedor, 35),
       publicAdministrationUnit: `${contract.numeroContratoEmpenho}/${contract.anoContrato}`,
       category: contract.categoriaProcesso.nome,
       contractObject: Formatter.truncate(contract.objetoContrato, 30),
