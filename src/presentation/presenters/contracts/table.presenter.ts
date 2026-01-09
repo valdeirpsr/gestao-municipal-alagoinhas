@@ -30,7 +30,7 @@ export class TablePresenter {
     new DataTable(DOM_ELEMENTS.contractsTable, {
       columns: [
         { data: "supplier", title: "Fornecedor" },
-        { data: "publicAdministrationUnit", title: "Órgão" },
+        { data: "contractNumber", title: "Contrato" },
         { data: "category", title: "Categoria" },
         { data: "contractObject", title: "Objeto" },
         { data: "isActive", title: "Vigente" },
@@ -69,7 +69,7 @@ export class TablePresenter {
   private mapContractsToTableData(contracts: Contract[]): Array<Record<string, any>> {
     return contracts.map((contract) => ({
       supplier: Formatter.truncate(contract.nomeRazaoSocialFornecedor, 35),
-      publicAdministrationUnit: `${contract.numeroContratoEmpenho}/${contract.anoContrato}`,
+      contractNumber: `${contract.numeroContratoEmpenho}/${contract.anoContrato}`,
       category: contract.categoriaProcesso.nome,
       contractObject: Formatter.truncate(contract.objetoContrato, 30),
       isActive: this.renderActiveStatus(contract),
