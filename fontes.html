@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Painel de Emendas Parlamentares - Alagoinhas</title>
+        <link rel="icon" href="./vite.svg" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./src/index.css" />
+
+        <!-- Scripts -->
+        <script type="module" src="./src/components/psr-nav.ts"></script>
+        <script type="module" src="./src/components/psr-card.ts"></script>
+        <script type="module" src="./src/components/psr-heading.ts"></script>
+        <script type="module" src="./src/components/psr-link.ts"></script>
+    </head>
+    <body class="bg-slate-50 font-sans text-slate-800 pt-0 min-h-screen">
+        <!-- Cabeçalho -->
+        <header class="mb-8">
+            <psr-nav></psr-nav>
+        </header>
+
+        <main class="container">
+            <psr-heading>Fontes de Dados</psr-heading>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <psr-card>
+                    <span slot="title">Portal Nacional de Contratações Públicas</span>
+                    <div slot="icon" class="bg-blue-50 text-blue-600"><i data-lucide="globe" class="w-8 h-8"></i></div>
+                    <p class="text-gray-600 mb-3">Sistema nacional que consolida informações sobre licitações e contratos administrativos de todos os entes da federação.</p>
+                    <psr-link href="https://pncp.gov.br" target="_blank">Acessar Portal</psr-link>
+                </psr-card>
+
+                <psr-card>
+                    <span slot="title">Diários Oficiais</span>
+                    <div slot="icon" class="bg-green-50 text-green-600"><i data-lucide="book-open-text" class="w-8 h-8"></i></div>
+                    <p class="text-gray-600 mb-3">Publicações oficiais que divulgam atos, contratos e licitações da administração pública municipal, estadual e federal.</p>
+                    <psr-link href="https://doem.org.br/ba/alagoinhas/" target="_blank">Acessar Portal</psr-link>
+                </psr-card>
+
+                <psr-card>
+                    <span slot="title">Portal da Transparência da Prefeitura de Alagoinhas</span>
+                    <div slot="icon" class="bg-purple-50 text-purple-600"><i data-lucide="landmark" class="w-8 h-8"></i></div>
+                    <p class="text-gray-600 mb-3">Portal oficial do município que disponibiliza informações sobre receitas, despesas, contratos e licitações de forma transparente.</p>
+                    <psr-link href="https://transparencia.alagoinhas.ba.gov.br/" target="_blank">Acessar Portal</psr-link>
+                </psr-card>
+            </div>
+        </main>
+
+        <!-- <script type="module" src="./src/pages/emendas.ts"></script> -->
+        <script type="module">
+            import { createIcons, icons } from "lucide";
+            createIcons({ icons });
+        </script>
+    </body>
+</html>

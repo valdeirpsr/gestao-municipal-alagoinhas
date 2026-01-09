@@ -30,6 +30,7 @@ export class PsrNav extends LitElement {
   private readonly tabs = [
     { id: "contratos", label: "Contratos", href: "/" },
     { id: "emendas", label: "Emendas", href: "/emendas.html" },
+    { id: "fontes", label: "Fontes", href: "/fontes.html" },
   ];
 
   render() {
