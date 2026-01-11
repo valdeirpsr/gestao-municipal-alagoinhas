@@ -30,6 +30,9 @@ export const DOM_ELEMENTS = {
   loaExpensesByFunctionTable: "#loaExpensesByFunctionTable",
   loaRevenuesTable: "#loaRevenuesTable",
 
+  // Line
+  loaHistoryLine: "#loaHistoryLine",
+
   // Treemap
   loaExpensesByAgencyTreemap: '#loaExpensesByAgencyTreemap',
 } as const;
