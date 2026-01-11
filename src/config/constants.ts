@@ -27,6 +27,8 @@ export const DOM_ELEMENTS = {
   // Tables
   contractsTable: "#contractsTable",
   parliamentaryAmendments: "#parliamentaryAmendmentsTable",
+  loaExpensesByFunctionTable: "#loaExpensesByFunctionTable",
+  loaRevenuesTable: "#loaRevenuesTable",
 
   // Treemap
   loaExpensesByAgencyTreemap: '#loaExpensesByAgencyTreemap',
