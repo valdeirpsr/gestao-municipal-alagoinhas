@@ -1,0 +1,1629 @@
+{
+    "totais": {
+        "receita": 777412981,
+        "despesa_fiscal": 553460281,
+        "despesa_seguridade": 223952700
+    },
+    "receitaGeral": {
+        "receitasCorrentes": [
+            {
+                "receita": "Impostos, Taxas e Contribuições de Melhoria",
+                "total": 127878121
+            },
+            {
+                "receita": "Contribuições",
+                "total": 13132930
+            },
+            {
+                "receita": "Receita Patrimonial",
+                "total": 4967145
+            },
+            {
+                "receita": "Receita de Serviços",
+                "total": 72283175
+            },
+            {
+                "receita": "Transferências Correntes",
+                "total": 529220640
+            },
+            {
+                "receita": "Outras Receitas Correntes",
+                "total": 7910694
+            }
+        ],
+        "receitasCapital": [
+            {
+                "receita": "Operações de Crédito",
+                "total": 5000000
+            },
+            {
+                "receita": "Transferências de Capital",
+                "total": 14926091
+            }
+        ],
+        "receitasCorrentesIntraorcamentarias": [
+            {
+                "receita": "Receita de Serviços",
+                "total": 2094185
+            }
+        ]
+    },
+    "despesas": {
+        "porOrgaos": [
+            {
+                "orgao": "Gabinete do Prefeito",
+                "sigla": "GAPRE",
+                "total": 4122026,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 3355937
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 239528
+                    },
+                    {
+                        "programa": "GESTÃO DA OUVIDORIA GERAL DO MUNICÍPIO",
+                        "total": 526561
+                    }
+                ]
+            },
+            {
+                "orgao": "Procuradoria Geral do Município",
+                "sigla": "PROGER",
+                "total": 4456477,
+                "despesas": [
+                    {
+                        "programa": "GESTÃO ESTRATÉGICA DA CONFORMIDADE LEGAL E CONTENCIOSO MUNICIPAL",
+                        "total": 4456477
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Saúde",
+                "sigla": "SESAU",
+                "total": 195229426,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 9280742
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 3836227
+                    },
+                    {
+                        "programa": "FORTALECIMENTO DO CONTROLE SOCIAL",
+                        "total": 50600
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DA AUDITORIA DO SISTEMA ÚNICO DE SAÚDE - SUS-MUNICÍPIO",
+                        "total": 1016495
+                    },
+                    {
+                        "programa": "IMPLEMENTAÇÃO DE ESTRATÉGIAS DE SAÚDE DIGITAL - ATENÇÃO PRIMÁRIA",
+                        "total": 51000
+                    },
+                    {
+                        "programa": "CONSTRUÇÃO E REQUALIFICAÇÃO DE UNIDADES BÁSICAS DE SAÚDE",
+                        "total": 42000
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS SERVIÇOS DA REDE DE ATENÇÃO PRIMÁRIA À SAÚDE E ESTRATÉGIA DE SAÚDE DA FAMÍLIA",
+                        "total": 42366920
+                    },
+                    {
+                        "programa": "FORTALECIMENTO DA SAÚDE BUCAL",
+                        "total": 6531075
+                    },
+                    {
+                        "programa": "CONSTRUÇÃO DO CENTRO DE ATENÇÃO PSICOSSOCIAL - CAPS III",
+                        "total": 111296
+                    },
+                    {
+                        "programa": "IMPLEMENTAÇÃO DE ESTRATÉGIAS DE SAÚDE DIGITAL - ATENÇÃO ESPECIALIZADA",
+                        "total": 31000
+                    },
+                    {
+                        "programa": "AMPLIAÇÃO E RENOVAÇÃO DE FROTA",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "IMPLANTAÇÃO DO CENTRO ESPECIALIZADO EM REABILITAÇÃO (CER) - TIPO IV",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS SERVIÇOS DE ATENÇÃO EM SAÚDE ESPECIALIZADA DE MÉDIA E ALTA COMPLEXIDADE",
+                        "total": 47003411
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS SERVIÇOS DA REDE DE ATENÇÃO ESPECIALIZADA - UPA",
+                        "total": 8382686
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS SERVIÇOS DE ATENDIMENTO MÓVEL DE URGÊNCIA - SAMU",
+                        "total": 10723100
+                    },
+                    {
+                        "programa": "GESTÃO DO HOSPITAL - MATERNIDADE",
+                        "total": 30576893
+                    },
+                    {
+                        "programa": "GERENCIAMENTO DA UNIDADE DE REINTEGRAÇÃO FUNCIONAL - URF",
+                        "total": 644993
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS SERVIÇOS MUNICIPAIS DE REGULAÇÃO",
+                        "total": 1106985
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS SERVIÇOS DOS CENTROS ESPECIALIZADOS EM REABILITAÇÃO - CER",
+                        "total": 5011280
+                    },
+                    {
+                        "programa": "PARTICIPAÇÃO EM CONSÓRCIO PÚBLICO - EXECUÇÃO DE CONTRATO DE RATEIO",
+                        "total": 905078
+                    },
+                    {
+                        "programa": "SERVIÇOS DE TRATAMENTO FORA DO DOMICÍLIO - TFD",
+                        "total": 1430688
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS SERVIÇOS DE ATENÇÃO E ASSISTÊNCIA FARMACÊUTICA",
+                        "total": 3786049
+                    },
+                    {
+                        "programa": "IMPLEMENTAÇÃO DE ESTRATÉGIAS DE SAÚDE DIGITAL - VIGILÂNCIA SANITÁRIA",
+                        "total": 8000
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DA VIGILÂNCIA SANITÁRIA",
+                        "total": 1284996
+                    },
+                    {
+                        "programa": "IMPLEMENTAÇÃO DE ESTRATÉGIAS DE SAÚDE DIGITAL - VIGILÂNCIA EPIDEMIOLÓGICA",
+                        "total": 11000
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DA VIGILÂNCIA EPIDEMIOLÓGICA",
+                        "total": 21032912
+                    },
+                    {
+                        "programa": "CUMPRIMENTO DE ACORDOS E SENTENÇAS JUDICIAIS",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "RESTITUIÇÕES DE RECURSOS RECEBIDOS",
+                        "total": 1000
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Planejamento e captação de recursos",
+                "sigla": "SEPLAC",
+                "total": 2405118,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 2072834
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 332284
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Obras e projetos",
+                "sigla": "SEOP",
+                "total": 3389526,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 1373153
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 792373
+                    },
+                    {
+                        "programa": "OBRAS DE DESENVOLVIMENTO URBANO - POLIGONAIS SUDOESTE E NOROESTE",
+                        "total": 500000
+                    },
+                    {
+                        "programa": "INFRAESTRUTURA VIÁRIA E CONECTIVIDADE URBANA",
+                        "total": 300000
+                    },
+                    {
+                        "programa": "IMPLANTAÇÃO E REQUALIFICAÇÃO DE ESPAÇOS PÚBLICOS",
+                        "total": 250000
+                    },
+                    {
+                        "programa": "FOMENTO À GOVERNANÇA TERRITORIAL PARTICIPATIVA",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "PRODUÇÃO DE UNIDADES HABITACIONAIS",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "MELHORIA DE UNIDADES HABITACIONAIS",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "REGULARIZAÇÃO DE TÍTULOS FUNDIÁRIOS",
+                        "total": 170000
+                    },
+                    {
+                        "programa": "GESTÃO DAS AÇÕES DE TRABALHO TÉCNICO SOCIAL",
+                        "total": 1000
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Mobilidade e ordem pública",
+                "sigla": "SEMORP",
+                "total": 28014819,
+                "despesas": [
+                    {
+                        "programa": "APRIMORAMENTO DA SEGURANÇA PREVENTIVA E CIDADÃ - GUARDA CIVIL",
+                        "total": 13909659
+                    },
+                    {
+                        "programa": "GESTÃO INTEGRADA DE RISCOS E DESASTRES - DEFESA CIVIL",
+                        "total": 215007
+                    },
+                    {
+                        "programa": "FORTALECIMENTO DO PLANEJAMENTO URBANO",
+                        "total": 40000
+                    },
+                    {
+                        "programa": "GESTÃO E FISCALIZAÇÃO DO ORDENAMENTO URBANO",
+                        "total": 9968720
+                    },
+                    {
+                        "programa": "OTIMIZAÇÃO DO TRANSPORTE PÚBLICO",
+                        "total": 3880433
+                    },
+                    {
+                        "programa": "OTIMIZAÇÃO DA MOBILIDADE URBANA SUSTENTÁVEL",
+                        "total": 1000
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Manutenção",
+                "sigla": "SEMAN",
+                "total": 56677773,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 5133832
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 40000
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DE BENS IMÓVEIS",
+                        "total": 2500000
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DA INFRAESTRUTURA VIÁRIA URBANA",
+                        "total": 9794879
+                    },
+                    {
+                        "programa": "REESTRUTURAÇÃO DOS CEMITÉRIOS",
+                        "total": 202668
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS CEMITÉRIOS",
+                        "total": 50000
+                    },
+                    {
+                        "programa": "SERVIÇOS DE LIMPEZA PÚBLICA",
+                        "total": 25869505
+                    },
+                    {
+                        "programa": "AMPLIAÇÃO DA CAPACIDADE DO ATERRO SANITÁRIO",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "OPERACIONALIZAÇÃO DO ESPAÇO DE DISPOSIÇÃO FINAL DE RESÍDUOS SÓLIDOS",
+                        "total": 3720348
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DO PARQUE DE ILUMINAÇÃO PÚBLICA",
+                        "total": 9365541
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Governo",
+                "sigla": "SEGOV",
+                "total": 2523972,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 2483972
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 40000
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Eficiência e ação governamental",
+                "sigla": "SEAG",
+                "total": 891680,
+                "despesas": [
+                    {
+                        "programa": "FORTALECIMENTO DA GOVERNANÇA E GESTÃO INTEGRADA",
+                        "total": 891680
+                    }
+                ]
+            },
+            {
+                "orgao": "Serviço Autônomo de Água e Esgoto",
+                "sigla": "SAAE",
+                "total": 75866847,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 29087116
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 27374366
+                    },
+                    {
+                        "programa": "AMPLIAÇÃO DO ABASTECIMENTO DE ÁGUA",
+                        "total": 1972409
+                    },
+                    {
+                        "programa": "MELHORIA DA EFICIÊNCIA E DOS CONTROLES OPERACIONAIS E COMERCIAIS",
+                        "total": 1720000
+                    },
+                    {
+                        "programa": "PROGRAMA SANEAMENTO PARA TODOS",
+                        "total": 1560000
+                    },
+                    {
+                        "programa": "ESGOTAMENTO SANITÁRIO - PAC I",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "ESGOTAMENTO SANITÁRIO - PAC II",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "ESGOTAMENTO SANITÁRIO - AVANÇAR CIDADES",
+                        "total": 5001000
+                    },
+                    {
+                        "programa": "SERVIÇO DA DÍVIDA INTERNA",
+                        "total": 6766956
+                    },
+                    {
+                        "programa": "CUMPRIMENTO DE ACORDOS E SENTENÇAS JUDICIAIS",
+                        "total": 1719905
+                    },
+                    {
+                        "programa": "OBRIGAÇÕES TRIBUTÁRIAS E CONTRIBUTIVAS",
+                        "total": 653095
+                    },
+                    {
+                        "programa": "RESTITUIÇÕES DE RECURSOS RECEBIDOS",
+                        "total": 10000
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Educação",
+                "sigla": "SEDUC",
+                "total": 178684181,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 37069242
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 3372217
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DOS CONSELHOS MUNICIPAIS DE EDUCAÇÃO",
+                        "total": 19386
+                    },
+                    {
+                        "programa": "ALIMENTAÇÃO ESCOLAR",
+                        "total": 4000000
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DA REDE DE EDUCAÇÃO BÁSICA - ENSINO FUNDAMENTAL",
+                        "total": 74551261
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DA REDE DE EDUCAÇÃO INFANTIL - CRECHE",
+                        "total": 14120037
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DA REDE DE EDUCAÇÃO INFANTIL - PRÉ-ESCOLA",
+                        "total": 11054373
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DA REDE DE EDUCAÇÃO DE JOVENS, ADULTOS E IDOSOS",
+                        "total": 3652398
+                    },
+                    {
+                        "programa": "MELHORIA E EXPANSÃO DA INFRAESTRUTURA DA REDE DE EDUCAÇÃO BÁSICA",
+                        "total": 17129960
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DE BENS IMÓVEIS",
+                        "total": 500000
+                    },
+                    {
+                        "programa": "GESTÃO DO TRANSPORTE ESCOLAR",
+                        "total": 12770164
+                    },
+                    {
+                        "programa": "AÇÕES INTEGRADAS E ARTICULADAS EM PARCEIRA COM ENTIDADES DE EDUCAÇÃO",
+                        "total": 443143
+                    },
+                    {
+                        "programa": "CUMPRIMENTO DE ACORDOS E SENTENÇAS JUDICIAIS",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "RESTITUIÇÕES DE RECURSOS RECEBIDOS",
+                        "total": 1000
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Desenvolvimento Rural e Meio Ambiente",
+                "sigla": "SDRA",
+                "total": 12984762,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 6469143
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 40000
+                    },
+                    {
+                        "programa": "IMPLANTAÇÃO E REQUALIFICAÇÃO DE ESPAÇOS PÚBLICOS",
+                        "total": 460000
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DE BENS IMÓVEIS",
+                        "total": 100000
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DA INFRAESTRUTURA VIÁRIA RURAL",
+                        "total": 3746626
+                    },
+                    {
+                        "programa": "AGRICULTURA PRODUTIVA E SUSTENTÁVEL",
+                        "total": 602929
+                    },
+                    {
+                        "programa": "MEIO AMBIENTE, BEM ESTAR ANIMAL E QUALIDADE DE VIDA",
+                        "total": 1562420
+                    },
+                    {
+                        "programa": "OBRIGAÇÕES TRIBUTÁRIAS E CONTRIBUTIVAS",
+                        "total": 3644
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Desenvolvimento Econômico e Emprego",
+                "sigla": "SDEE",
+                "total": 2076468,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 1239468
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 135000
+                    },
+                    {
+                        "programa": "DESENVOLVIMENTO DA ECONOMIA LOCAL DO CAMPO À CIDADE",
+                        "total": 290000
+                    },
+                    {
+                        "programa": "INCENTIVO À INCLUSÃO PRODUTIVA",
+                        "total": 90000
+                    },
+                    {
+                        "programa": "FOMENTO À INOVAÇÃO E AO EMPREENDEDORISMO TECNOLÓGICO",
+                        "total": 170000
+                    },
+                    {
+                        "programa": "FORTALECIMENTO DAS ECONOMIAS CRIATIVA, SOLIDÁRIA, CIRCULAR E VERDE",
+                        "total": 150000
+                    },
+                    {
+                        "programa": "IMPLANTAÇÃO E REQUALIFICAÇÃO DE ESPAÇOS PÚBLICOS",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "IMPLANTAÇÃO DO DISTRITO INDUSTRIAL",
+                        "total": 1000
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Cultura, esporte e turismo",
+                "sigla": "SECET",
+                "total": 16028583,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 2149609
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 38000
+                    },
+                    {
+                        "programa": "GESTÃO DAS AÇÕES DOS CONSELHOS",
+                        "total": 10000
+                    },
+                    {
+                        "programa": "MELHORIA E EXPANSÃO DA INFRAESTRUTURA TURÍSTICA",
+                        "total": 50000
+                    },
+                    {
+                        "programa": "FOMENTO AO TURISMO",
+                        "total": 4550000
+                    },
+                    {
+                        "programa": "MELHORIA E EXPANSÃO DA INFRAESTRUTURA ESPORTIVA",
+                        "total": 729929
+                    },
+                    {
+                        "programa": "INCENTIVO E APOIO AO ESPORTE",
+                        "total": 2633858
+                    },
+                    {
+                        "programa": "MELHORIA E EXPANSÃO DA INFRAESTRUTURA CULTURAL",
+                        "total": 400000
+                    },
+                    {
+                        "programa": "EVENTOS E MANIFESTAÇÕES CULTURAIS",
+                        "total": 4292787
+                    },
+                    {
+                        "programa": "FORTALECIMENTO DA POLITICA NACIONAL DE CULTURA VIVA - PNCV",
+                        "total": 1174400
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Comunicação",
+                "sigla": "SECOM",
+                "total": 3888429,
+                "despesas": [
+                    {
+                        "programa": "APRIMORAMENTO DA COMUNICAÇÃO PÚBLICA",
+                        "total": 3888429
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal da Fazenda",
+                "sigla": "SEFAZ",
+                "total": 90230099,
+                "despesas": [
+                    {
+                        "programa": "FORTALECIMENTO DA POLÍTICA FISCAL DO MUNICÍPIO",
+                        "total": 13934503
+                    },
+                    {
+                        "programa": "RECUPERAÇÃO DE CRÉDITOS MUNICIPAIS",
+                        "total": 19260
+                    },
+                    {
+                        "programa": "SERVIÇO DA DÍVIDA INTERNA",
+                        "total": 49388858
+                    },
+                    {
+                        "programa": "SERVIÇO DA DÍVIDA EXTERNA",
+                        "total": 9000000
+                    },
+                    {
+                        "programa": "CUMPRIMENTO DE ACORDOS E SENTENÇAS JUDICIAIS",
+                        "total": 7186914
+                    },
+                    {
+                        "programa": "OBRIGAÇÕES TRIBUTÁRIAS E CONTRIBUTIVAS",
+                        "total": 6912129
+                    },
+                    {
+                        "programa": "RESTITUIÇÕES DE RECURSOS RECEBIDOS",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "RESERVA DE CONTINGÊNCIA",
+                        "total": 3787435
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal da Administração e inovação tecnológica",
+                "sigla": "SEAI",
+                "total": 22418156,
+                "despesas": [
+                    {
+                        "programa": "MODERNIZAÇÃO DA GESTÃO PÚBLICA COM FOCO EM CAPITAL HUMANO E INOVAÇÃO TECNOLÓGICA",
+                        "total": 22191176
+                    },
+                    {
+                        "programa": "PARTICIPAÇÃO EM CONSÓRCIO PÚBLICO - EXECUÇÃO DO CONTRATO DE RATEIO",
+                        "total": 226980
+                    }
+                ]
+            },
+            {
+                "orgao": "Câmara Municipal de Alagoinhas",
+                "sigla": null,
+                "total": 28272375,
+                "despesas": [
+                    {
+                        "programa": "MODERNIZAÇÃO DA INFRAESTRUTURA FÍSICA E TECNOLÓGICA",
+                        "total": 1327650
+                    },
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL E ENCARGOS",
+                        "total": 16672039
+                    },
+                    {
+                        "programa": "CAPACITAÇÃO DOS SERVIDORES DA CÂMARA",
+                        "total": 100000
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 10028964
+                    },
+                    {
+                        "programa": "PUBLICIDADE DAS AÇÕES DO LEGISLATIVO",
+                        "total": 143722
+                    }
+                ]
+            },
+            {
+                "orgao": "Controladoria Geral do Município",
+                "sigla": "COGER",
+                "total": 3251455,
+                "despesas": [
+                    {
+                        "programa": "FORTALECIMENTO DA GOVERNANÇA, INTEGRIDADE E CONTROLE INTERNO MUNICIPAL",
+                        "total": 3251455
+                    }
+                ]
+            },
+            {
+                "orgao": "Secretaria Municipal de Desenvolvimento Social",
+                "sigla": "SEDES",
+                "total": 28723274,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 5027389
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DO CONSELHO TUTELAR",
+                        "total": 983527
+                    },
+                    {
+                        "programa": "FORTALECIMENTOS DO CONTROLE SOCIAL DAS POLITICAS DE DIREITOS HUMANOS",
+                        "total": 2000
+                    },
+                    {
+                        "programa": "PROGRAMA MÃOS QUE ACOLHEM",
+                        "total": 20000
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DO CENTRO INTEGRADO DE ASSISTÊNCIA SOCIAL - CIAS",
+                        "total": 155076
+                    },
+                    {
+                        "programa": "GESTÃO DO CENTRO DE ENSINO PROFISSIONALIZANTE",
+                        "total": 313000
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DO CENTRO DE REFERENCIA DE ATENDIMENTO DA MULHER",
+                        "total": 604696
+                    },
+                    {
+                        "programa": "RESTAURANTE POPULAR",
+                        "total": 1560000
+                    },
+                    {
+                        "programa": "SEGURANÇA ALIMENTAR EM PRIMEIRO LUGAR",
+                        "total": 2000
+                    },
+                    {
+                        "programa": "GESTÃO DAS AÇOES DA DIRETORIA DE DIREITOS HUMANOS",
+                        "total": 33696
+                    },
+                    {
+                        "programa": "PROGRAMA HABITAR ALAGOINHAS",
+                        "total": 722020
+                    },
+                    {
+                        "programa": "FORTALECIMENTO DO CONTROLE SOCIAL (CONSELHO DE ASSITÊNCIA SOCIAL)",
+                        "total": 34604
+                    },
+                    {
+                        "programa": "PROCADSUAS",
+                        "total": 51382
+                    },
+                    {
+                        "programa": "GESTÃO ADMINISTRATIVA DO FUNDO DE ASSISTÊNCIA SOCIAL",
+                        "total": 821617
+                    },
+                    {
+                        "programa": "PROGRAMA FAMÍLIA ACOLHEDORA",
+                        "total": 91080
+                    },
+                    {
+                        "programa": "PRIMEIRA INFÂNCIA NO SUAS – CRIANÇA FELIZ",
+                        "total": 2085033
+                    },
+                    {
+                        "programa": "GESTÃO DE BENEFÍCIOS EVENTUAIS",
+                        "total": 1163094
+                    },
+                    {
+                        "programa": "BLOCO DE GESTÃO DO PROGRAMA BOLSA FAMÍLIA E CADASTRO ÚNICO",
+                        "total": 2408964
+                    },
+                    {
+                        "programa": "SERVIÇOS DE PROTEÇÃO EM SITUAÇÕES DE CALAMIDADES PÚBLICAS E DE EMERGÊNCIAS A FAMÍLIAS E INDIVÍDUOS",
+                        "total": 15000
+                    },
+                    {
+                        "programa": "AÇOES INTEGRADAS E ARTICULADAS EM PARCERIA COM ENTIDADES DE ASSISTENCIA SOCIAL",
+                        "total": 675781
+                    },
+                    {
+                        "programa": "IMPLANTAÇÃO E/OU CONSTRUÇÃO DE CRAS/CREAS",
+                        "total": 133100
+                    },
+                    {
+                        "programa": "BLOCO DA PROTEÇÃO SOCIAL BÁSICA",
+                        "total": 4508542
+                    },
+                    {
+                        "programa": "BLOCO DA PROTEÇÃO SOCIAL ESPECIAL DE MÉDIA E ALTA COMPLEXIDADE (MAC)",
+                        "total": 2462331
+                    },
+                    {
+                        "programa": "ACESSUAS TRABALHO – BLOCO DA PROTEÇÃO SOCIAL BÁSICA",
+                        "total": 420000
+                    },
+                    {
+                        "programa": "BLOCO DE GESTÃO DO SUAS – IGD-SUAS",
+                        "total": 192061
+                    },
+                    {
+                        "programa": "BPC NA ESCOLA - BLOCO DA PROTEÇÃO SOCIAL BÁSICA",
+                        "total": 1000
+                    },
+                    {
+                        "programa": "EXECUÇÃO DE EMENDAS PARLAMENTARES PARA ASSISTÊNCIA SOCIAL",
+                        "total": 3827358
+                    },
+                    {
+                        "programa": "CUMPRIMENTO DE ACORDOS E SENTENÇAS JUDICIAIS",
+                        "total": 4000
+                    },
+                    {
+                        "programa": "RESTITUIÇÕES DE RECURSOS RECEBIDOS",
+                        "total": 5704
+                    },
+                    {
+                        "programa": "GESTÃO DAS AÇÕES DO CONSLEHO MUNICIPAL DOS DIREITOS DA CRIANÇA E DO ADOLESCENTE",
+                        "total": 38000
+                    },
+                    {
+                        "programa": "GESTÃO DAS AÇÕES DE FORTALECIMENTO DA REDE DE PROTEÇÃO E ATENDIMENTO À CRIANÇA E ADOLESCENTE",
+                        "total": 45489
+                    },
+                    {
+                        "programa": "IMPLANTAÇÃO DO CENTRO DE CONVIVENCIA DA PESSOA IDOSA",
+                        "total": 2000
+                    },
+                    {
+                        "programa": "SERVIÇO DE POLÍTICA DE PROMOÇÃO, PROTEÇÃO E DEFESA DOS DIREITOS DA PESSOA IDOSA",
+                        "total": 142186
+                    },
+                    {
+                        "programa": "FUNCIONAMENTO DO CENTRO DE CONVIVÊNCIA DA PESSOA IDOSA",
+                        "total": 170544
+                    }
+                ]
+            },
+            {
+                "orgao": "Superintendência Municipal de Trânsito",
+                "sigla": "SMT",
+                "total": 17277535,
+                "despesas": [
+                    {
+                        "programa": "ADMINISTRAÇÃO DE PESSOAL, ENCARGOS E BENEFICIOS",
+                        "total": 10856195
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DOS SERVIÇOS TÉCNICOS E ADMINISTRATIVOS",
+                        "total": 757158
+                    },
+                    {
+                        "programa": "CAMPANHA EDUCATIVA PARA A PREVENÇÃO DE ACIDENTES DE TRÂNSITO E ATOS INFRACIONAIS",
+                        "total": 191000
+                    },
+                    {
+                        "programa": "APRIMORAMENTO DA MOBILIDADE URBANA E SEGURANÇA VIÁRIA",
+                        "total": 150000
+                    },
+                    {
+                        "programa": "MANUTENÇÃO DA SINALIZAÇÃO DE VIAS E ORDENAMENTO DO TRÂNSITO",
+                        "total": 5024182
+                    },
+                    {
+                        "programa": "SERVIÇO DA DÍVIDA INTERNA",
+                        "total": 288000
+                    },
+                    {
+                        "programa": "OBRIGAÇÕES TRIBUTÁRIAS E CONTRIBUTIVAS",
+                        "total": 6000
+                    },
+                    {
+                        "programa": "RESTITUIÇÕES DE RECURSOS RECEBIDOS",
+                        "total": 5000
+                    }
+                ]
+            }
+        ],
+        "porFuncoesGoverno": [
+            {
+                "funcao": "Legislativa",
+                "total": 28272375
+            },
+            {
+                "funcao": "Administração",
+                "total": 83596363
+            },
+            {
+                "funcao": "Segurança Pública",
+                "total": 14124666
+            },
+            {
+                "funcao": "Assistência Social",
+                "total": 28713570
+            },
+            {
+                "funcao": "Saúde",
+                "total": 195228426
+            },
+            {
+                "funcao": "Trabalho",
+                "total": 2075468
+            },
+            {
+                "funcao": "Educação",
+                "total": 178683181
+            },
+            {
+                "funcao": "Cultura",
+                "total": 5867187
+            },
+            {
+                "funcao": "Urbanismo",
+                "total": 40311166
+            },
+            {
+                "funcao": "Habitação",
+                "total": 174000
+            },
+            {
+                "funcao": "Saneamento",
+                "total": 96307744
+            },
+            {
+                "funcao": "Gestão Ambiental",
+                "total": 1562420
+            },
+            {
+                "funcao": "Agricultura",
+                "total": 4909555
+            },
+            {
+                "funcao": "Industria",
+                "total": 1000
+            },
+            {
+                "funcao": "Comércio e Serviços",
+                "total": 4600000
+            },
+            {
+                "funcao": "Transporte",
+                "total": 3881433
+            },
+            {
+                "funcao": "Desporto e Lazer",
+                "total": 3363787
+            },
+            {
+                "funcao": "Encargos Especiais",
+                "total": 81953205
+            },
+            {
+                "funcao": "Reserva",
+                "total": 378743
+            }
+        ],
+        "porGrupoNaturezaDespesa": {
+            "despesasCorrentes": [
+                {
+                    "despesa": "Pessoal e Encargos Sociais",
+                    "total": 316374253
+                },
+                {
+                    "despesa": "Juros e Encargos da Dívida",
+                    "total": 24568080
+                },
+                {
+                    "despesa": "Outras Despesas Correntes",
+                    "total": 353370882
+                }
+            ],
+            "despesasCapital": [
+                {
+                    "despesa": "Investimentos",
+                    "total": 33381797
+                },
+                {
+                    "despesa": "Inversões Financeiras",
+                    "total": 303900
+                },
+                {
+                    "despesa": "Amortização da Dívida",
+                    "total": 45626634
+                }
+            ],
+            "reservaContingencia": [
+                {
+                    "despesa": "Reserva de Contigência",
+                    "total": 3787435
+                }
+            ]
+        }
+    },
+    "historico": [
+        {
+            "nome": "Impostos, Taxas e Contribuições de Melhoria",
+            "tipo": "receitas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 97015017.18,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 99274643.79,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 123135562.13,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 118084176,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 127878121,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 132993246,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 138046989,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Contribuições",
+            "tipo": "receitas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 9621831.29,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 10717580.23,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 12407623.68,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 11645083,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 13132930,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 13658247,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 14177260,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Receita Patrimonial",
+            "tipo": "receitas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 10363138.1,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 5993013.75,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 10706236.09,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 2880302,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 4967145,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 5165831,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 5362133,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Receita de Serviços",
+            "tipo": "receitas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 47074096.77,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 52376523.08,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 60259627.13,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 60278024,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 74377360,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 77352454,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 80291847,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Transferências Correntes",
+            "tipo": "receitas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 405869644.77,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 415427897.78,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 490278902.77,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 485633376,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 529220640,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 550389466,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 571304266,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Outras Receitas Correntes",
+            "tipo": "receitas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 3489299.42,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 3688610.15,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 9237885.92,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 4226904,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 7910694,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 8227122,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 8539753,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Operações de Crédito",
+            "tipo": "receitas de capital",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 41506399.43,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 12679059.08,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 55247124,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 5015307,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 5000000,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 5200000,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 5397600,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Alienação de Bens",
+            "tipo": "receitas de capital",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 0,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 0,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 8389094.05,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 0,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 0,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 0,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 0,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Transferências de Capital",
+            "tipo": "receitas de capital",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 14246490.65,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2023,
+                    "total": 8039618.73,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2024,
+                    "total": 11071649.93,
+                    "tipo": "ARRECADAÇÃO"
+                },
+                {
+                    "ano": 2025,
+                    "total": 3531402,
+                    "tipo": "ORÇADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 14926091,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 15523135,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 16113014,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Pessoal e Encargos Sociais",
+            "tipo": "despesas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 275117319.09,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2023,
+                    "total": 254260278.09,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2024,
+                    "total": 251269523.97,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2025,
+                    "total": 297524677,
+                    "tipo": "FIXADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 316374253,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 331781679,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 347939447,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Juros e Encargos da Dívida",
+            "tipo": "despesas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 5337321.21,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2023,
+                    "total": 10963507.71,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2024,
+                    "total": 16018073.44,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2025,
+                    "total": 20470958,
+                    "tipo": "FIXADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 24568080,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 25550803,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 26521734,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Outras Despesas Correntes",
+            "tipo": "despesas correntes",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 310598706.9,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2023,
+                    "total": 313855079.81,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2024,
+                    "total": 388186601.85,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2025,
+                    "total": 313254468.24,
+                    "tipo": "FIXADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 353370882,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 367162443,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 381114616,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Investimentos",
+            "tipo": "despesas de capital",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 67684454.51,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2023,
+                    "total": 29969766.04,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2024,
+                    "total": 94114754.26,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2025,
+                    "total": 16111718.76,
+                    "tipo": "FIXADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 33381797,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 32623945,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 30313590,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Inversão Financeira",
+            "tipo": "despesas de capital",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 0,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2023,
+                    "total": 997000,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2024,
+                    "total": 0,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2025,
+                    "total": 2509921,
+                    "tipo": "FIXADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 303900,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 0,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 0,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        },
+        {
+            "nome": "Amortização da Divida",
+            "tipo": "despesas de capital",
+            "anos": [
+                {
+                    "ano": 2022,
+                    "total": 25220693.82,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2023,
+                    "total": 21672052.28,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2024,
+                    "total": 32675380.9,
+                    "tipo": "EXECUTADA"
+                },
+                {
+                    "ano": 2025,
+                    "total": 38004774,
+                    "tipo": "FIXADA"
+                },
+                {
+                    "ano": 2026,
+                    "total": 45626634,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2027,
+                    "total": 47451699,
+                    "tipo": "PREVISÃO"
+                },
+                {
+                    "ano": 2028,
+                    "total": 49254864,
+                    "tipo": "PREVISÃO"
+                }
+            ]
+        }
+    ]
+}
