@@ -2,6 +2,8 @@
  * Constantes da aplicação
  */
 
+import type { MarkLine1DDataItemOption } from "echarts/types/src/component/marker/MarkLineModel.js";
+
 export const DOM_ELEMENTS = {
   // KPI Cards (Contracts)
   totalContracts: "#totalContracts",
@@ -25,6 +27,9 @@ export const DOM_ELEMENTS = {
   // Tables
   contractsTable: "#contractsTable",
   parliamentaryAmendments: "#parliamentaryAmendmentsTable",
+
+  // Treemap
+  loaExpensesByAgencyTreemap: '#loaExpensesByAgencyTreemap',
 } as const;
 
 export const ANALYTICS = {
@@ -77,4 +82,13 @@ export const CONTRACT_REGEX = {
 
 export const AGENCY_FILES_TYPES = {
   CONTRACT: "contratos",
+} as const;
+
+export const LOA = {
+  year: 2026,
+  markLines: [
+    { xAxis: '2022' },
+    { xAxis: '2025' },
+    { xAxis: '2026' },
+  ] as MarkLine1DDataItemOption[]
 } as const;
