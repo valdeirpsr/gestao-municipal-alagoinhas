@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Painel da Lei Orçamentária Anual - Alagoinhas</title>
+        <link rel="icon" href="./vite.svg" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.3.6/css/dataTables.dataTables.min.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.6/css/buttons.dataTables.css" />
+        <link rel="stylesheet" href="./src/index.css" />
+
+        <!-- Scripts -->
+        <script type="module" src="./src/components/psr-nav.ts"></script>
+        <script type="module" src="./src/components/psr-kpi.ts"></script>
+        <script type="module" src="./src/components/psr-card.ts"></script>
+        <script type="module" src="./src/components/psr-heading.ts"></script>
+        <script type="module" src="./src/components/chart/treemap.ts"></script>
+        <script type="module" src="./src/components/chart/line.ts"></script>
+    </head>
+    <body class="bg-slate-50 font-sans text-slate-800 pt-0 min-h-screen">
+        <!-- Cabeçalho -->
+        <header class="mb-8">
+            <psr-nav></psr-nav>
+        </header>
+
+        <main class="container">
+            <!--  -->
+            <section>
+                <psr-heading>Totais</psr-heading>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <psr-kpi
+                        title="Receita"
+                        value="-"
+                        description="Valor previsto para 2026"
+                        icon="dollar-sign"
+                        icon-color="bg-green-100 text-green-600"
+                    ></psr-kpi>
+
+                    <psr-kpi
+                        title="Despesas (Orçamento Fiscal)"
+                        value="-"
+                        description="Valor de previsto para 2026"
+                        icon="dollar-sign"
+                        icon-color="bg-red-100 text-red-600"
+                    ></psr-kpi>
+
+                    <psr-kpi
+                        title="Despesas (Seguridade Social)"
+                        value="-"
+                        description="Valor de previsto para 2026"
+                        icon="dollar-sign"
+                        icon-color="bg-red-100 text-red-600"
+                    ></psr-kpi>
+                </div>
+            </section>
+
+            <!--  -->
+            <section>
+                <psr-heading>Despesas</psr-heading>
+
+                <psr-card>
+                    <span slot="title">Valores previstos para 2026</span>
+                    <table
+                        id="loaExpensesByFunctionTable"
+                        class="w-full text-left text-sm text-slate-600 display responsive flex-nowrap"
+                    ></table>
+                    <span slot="footer">Fonte: Lei Orçamentária Anual de 2026.</span>
+                </psr-card>
+            </section>
+
+            <!--  -->
+            <section>
+                <psr-heading>Arrecadação</psr-heading>
+
+                <psr-card>
+                    <span slot="title">Valores previstos para 2026</span>
+                    <table
+                        id="loaRevenuesTable"
+                        class="w-full text-left text-sm text-slate-600 display responsive flex-nowrap"
+                    ></table>
+                    <span slot="footer">Fonte: Lei Orçamentária Anual de 2026.</span>
+                </psr-card>
+            </section>
+
+            <!--  -->
+            <section>
+                <psr-heading>Despesas por Órgãos/Secretarias</psr-heading>
+
+                <psr-card>
+                    <span slot="title">Valores previstos para 2026</span>
+                    <div id="loaExpensesByAgencyTreemap">
+                        <small>Clique na opção para ver mais detalhes</small>
+                    </div>
+                    <span slot="footer">Fonte: Lei Orçamentária Anual de 2026.</span>
+                </psr-card>
+            </section>
+
+            <!--  -->
+            <section id="loaHistorySection">
+                <psr-heading>Histórico de Arrecadação e Previsões</psr-heading>
+
+                <psr-card>
+                    <span slot="title">Valores arrecadados, fixados e previstos</span>
+                    <div id="loaHistoryLine"></div>
+                    <span slot="footer">Fonte: Lei Orçamentária Anual de 2026.</span>
+                </psr-card>
+            </section>
+        </main>
+
+        <script type="module" src="./src/pages/loa.ts"></script>
+    </body>
+</html>
