@@ -1,5 +1,5 @@
 import { LitElement, html, unsafeCSS } from "lit";
-import { customElement, property, state } from "lit/decorators.js"; // Adicionado 'state'
+import { customElement, state } from "lit/decorators.js"; // Adicionado 'state'
 import { classMap } from "lit/directives/class-map.js";
 import tailwindStyles from "../index.css?inline";
 
