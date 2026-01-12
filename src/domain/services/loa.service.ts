@@ -10,15 +10,15 @@ export class LoaService implements ILoaService {
   }
 
   public getTotalRevenues(): number {
-    return 0;
+    return this.repository.getTotals().receita;
   }
 
-  public totalFiscalBudgetExpenses(): number {
-    return 0;
+  public getTotalFiscalBudgetExpenses(): number {
+    return this.repository.getTotals().despesa_fiscal;
   }
 
-  public totalSocialSecurityExpenses(): number {
-    return 0;
+  public getTotalSocialSecurityExpenses(): number {
+    return this.repository.getTotals().despesa_seguridade;
   }
 
   public getRevenues(): GeneralBudget {

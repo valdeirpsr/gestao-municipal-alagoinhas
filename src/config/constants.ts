@@ -18,6 +18,11 @@ export const DOM_ELEMENTS = {
   totalAgency: "#totalAgency",
   totalBudgetByCityCouncilMembers: "#totalBudgetByCityCouncilMembers",
 
+  // KPI Cards (LOA)
+  loaTotalsRevenueKpi: '#loaTotalsRevenueKpi',
+  loaTotalsFiscalBudgetKpi: '#loaTotalsFiscalBudgetKpi',
+  loaTotalsExpensesSocialSecurityKpi: '#loaTotalsExpensesSocialSecurityKpi',
+
   // Charts
   barChartContractsBySecretary: "barChartContractsBySecretary",
   pieChartByCategory: "pieChartByCategory",

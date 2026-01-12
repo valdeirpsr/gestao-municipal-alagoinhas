@@ -1,4 +1,4 @@
-import type { Agency, Expenses, GeneralBudget, GovernmentalSector, ItemHistory, LOA } from "../../types/loa";
+import type { Agency, Expenses, GeneralBudget, GovernmentalSector, ItemHistory, LOA, Totals } from "../../types/loa";
 import type { ILoa } from "./loa.repository.interface";
 
 export class LoaRepository implements ILoa {
@@ -6,6 +6,10 @@ export class LoaRepository implements ILoa {
 
   constructor(data: LOA) {
     this.data = data;
+  }
+
+  public getTotals(): Totals {
+    return this.data.totais;
   }
 
   public getRevenues(): GeneralBudget {

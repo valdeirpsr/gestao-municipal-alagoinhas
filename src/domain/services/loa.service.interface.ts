@@ -9,12 +9,12 @@ export interface ILoaService {
   /**
    * Captura total de despesas do Orçamento Fiscal
    */
-  totalFiscalBudgetExpenses(): number;
+  getTotalFiscalBudgetExpenses(): number;
 
   /**
    * Captura total de despesas com Seguridade Social
    */
-  totalSocialSecurityExpenses(): number;
+  getTotalSocialSecurityExpenses(): number;
 
   /**
    * Captura as receitas gerais
