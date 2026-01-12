@@ -10,7 +10,9 @@ export default defineConfig({
     rolldownOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        emendas: resolve(__dirname, 'emendas.html')
+        emendas: resolve(__dirname, 'emendas.html'),
+        loa: resolve(__dirname, 'loa.html'),
+        fontes: resolve(__dirname, 'fontes.html'),
       },
     }
   },
